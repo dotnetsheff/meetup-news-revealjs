@@ -10,39 +10,68 @@
         <section data-autoslide="1"></section>
         <section>
             <h1>.NET NEWS</h1>
-           <section>
-                <h2>.NET Core 3.0 Preview 5</h2>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000">.NET Core 3.0 final release in September</span>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000"> - Boosted performance for desktop development</span>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000"> - New SqlClient extracted to nuget package Microsoft.Data.SqlClient</span>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000"> - dotnet publish a single-file executable</span>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000"> - New JSON Serializer</span>
-            </section>
+
             <section>
-                <h2>Visual Studio Online</h2>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="4000">In the future, you will be able to navigate to https://online.visualstudio.com and access any of your remote environments</span>
+                <h3>Introducing the new Microsoft.Data.SqlClient</h3>
+                <span class="fragment fade-in-then-semi-out" data-autoslide="1000">Now available in preview on
+                    NuGet</span>
+                <span class="fragment fade-in-then-semi-out" data-autoslide="2000"> supports both .NET Core and .NET
+                    Framework</span>
+                <span class="fragment fade-in-then-semi-out" data-autoslide="3000"> Roadmap: Merge .NET Framework and
+                    .NET Core code bases, Open source assembly, Move to GitHub</span>
             </section>
+
             <section>
-                <h2>ML.NET 1.0</h2>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000">ML.NET allows you to train, build and ship custom machine learning models using C# or F# for scenarios such as sentiment analysis, issue classification, forecasting, recommendations and more</span>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="2000">ML.NET CLI and ML.NET Model Builder Previews</span>
+                <h3>Default implementations in interfaces</h3>
+                <span>available with .NET Core 3.0 Preview 5</span>
+                <pre><code data-noescape>
+interface ILogger
+{
+    void Log(LogLevel level, string message);
+    void Log(Exception ex) => Log(LogLevel.Error, ex.ToString());
+}
+                </code></pre>
             </section>
+
             <section>
-                <h2>General Availability of IntelliCode</h2>
-                <span class="fragment fade-in-then-semi-out" data-autoslide="5000">IntelliCode uses artificial intelligence (AI) technology to improve on the IntelliSense feature of Visual Studio that provides functionality such as code-completion help: a list of possible code constructs likely to finish off what a developer is typing</span>
+                <h3>Visual Studio Pull Requests Extension</h3>
+                <span class="fragment grow" data-autoslide="500">Get it on marketplace
+                    http://bit.ly/VSPullRequests</span>
+                <ul>
+                    <li class="fragment show" data-autoslide="1000">Creating new pull requests</li>
+                    <li class="fragment show" data-autoslide="1000">Reviewing pull requests</li>
+                    <li class="fragment show" data-autoslide="1000">Comments using markdown, emojis, and likes</li>
+                    <li class="fragment show" data-autoslide="2000">Comparing code differences for over-the-shoulder and
+                        self-code review</li>
+                </ul>
             </section>
+
+            <section>
+                <h3>First preview of Powershel 7</h3>
+                <span class="fragment" data-autoslide="500">Get it here http://bit.ly/Powershell7Preview</span>
+                <ul>
+                    <li class="fragment" data-autoslide="1000">Move to .NET Core 3</span>
+                    <li class="fragment" data-autoslide="1000">Send logs to a remote target #logging</span>
+                    <li class="fragment" data-autoslide="1000">Simplify Secure Credentials Management #security</span>
+                    <li class="fragment" data-autoslide="1000">New version #notifications</span>
+                    <li class="fragment" data-autoslide="2000">https://github.com/PowerShell/PowerShell-RFC</span>
+                </ul>
+            </section>
+
         </section>
-       <section>
+        <section>
             <h1>DDD Events</h1>
             <section>
                 <h2>DDD East Midlands</h2>
                 <p class="fragment" data-autoslide="500">https://www.dddeastmidlands.com/</p>
-                <p class="fragment" data-autoslide="500">Tickets released!</p>
-                <p class="fragment" data-autoslide="2000">Vote for talks now!</p>
+                <p class="fragment" data-autoslide="500">Voting for talks closed</p>
+                <p class="fragment" data-autoslide="2000">Agenda published on 28th September</p>
             </section>
         </section>
+
         <section>
             <h1>Sponsors</h1>
+
             <section>
                 <svg class="raygun-logo" width="500" height="120" viewBox="0 0 173 32"
                     xmlns="http://www.w3.org/2000/svg">
@@ -59,24 +88,31 @@
                 <p class="fragment fade-in" data-autoslide="1000">Spot every bug</p>
                 <p class="fragment fade-in" data-autoslide="4000">Discover every performance issue</p>
             </section>
+
             <section data-background-video="https://www.3squared.com/img/3squared.mp4" data-background-video-muted>
                 <img src="images/3squared-logo.png" />
                 <p class="fragment grow highlight-blue" data-autoslide="100">https://www.3squared.com/</p>
-                <p class="fragment fade-in highlight-blue" data-autoslide="1000">Proud to play our part in creating a digital railway</p>
-                <p class="fragment fade-in highlight-blue" data-autoslide="4000">Developing innovative and technically brilliant software</p>
+                <p class="fragment fade-in highlight-blue" data-autoslide="1000">Proud to play our part in creating a
+                    digital railway</p>
+                <p class="fragment fade-in highlight-blue" data-autoslide="4000">Developing innovative and technically
+                    brilliant software</p>
             </section>
+
             <section>
                 <img src="images/jet2-logo-white-png.png" />
                 <p class="fragment grow" data-autoslide="100">https://www.jet2.com</p>
                 <p class="fragment fade-in" data-autoslide="1000">Friendly low fares</p>
-                <p class="fragment fade-in" data-autoslide="4000">Providing IT professionals the platform to continue to learn and develop their skills is vital</p>
+                <p class="fragment fade-in" data-autoslide="4000">Providing IT professionals the platform to continue to
+                    learn and develop their skills is vital</p>
             </section>
         </section>
+
         <section>
             <h1>Next Event</h1>
-            <p class="fragment" data-autoslide="1000">Lightning Talks!</p>
-            <p class="fragment" data-autoslide="4000">join us Tuesday June 4th</p>
+            <p class="fragment" data-autoslide="1000">Carter with Richard Tasker</p>
+            <p class="fragment" data-autoslide="4000">join us Tuesday July 2nd</p>
         </section>
+
         <section data-background-image="https://media.giphy.com/media/uExpg4fElIGaY/giphy.gif">
             <h1>Housekeeping</h1>
             <p class="fragment fade-in" data-autoslide="1000">Bins</p>
